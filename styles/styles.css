@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../assets/background.jpg);
+    height: 100vh;
+}
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.txt p{
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+}
+.txt a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+.txt a:hover{
+    background: #00A97F;
+    border: 2px solid #00A97F;
+    color: #fff;
+    transition: .2s;
+}
+.header_desktop a strong{
+    margin: 40px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    margin: 40px;
+}
+ul li{
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+li a{
+    color: #fff;
+}
+nav strong{
+    color: #fff;
+    font-size: 2rem;
+}
+nav strong:hover{
+    color: #00A97F;
+    transition: .3s;
+}
+ul li::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #00A97F;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+ul li:hover::after{
+    width: 100%;
+}
+@media screen and (min-width:769px){
+    .header_mobile{
+        display: none;
+    }
+}
+@media(max-width:768px){
+    h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .header_desktop{
+        display: none;
+    }
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+    nav{
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    .mobile-logo{
+        margin-left: 20px;
+    }
+    .mobile-logo strong a{
+        color: #ffff;
+        font-size: 1.6rem;
+    }
+    input , label{
+        display: block;
+    }
+    .nav-mobile{
+        height: 100px;
+        width: 100%;
+        padding-right: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bar-btn{
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .nav-menu{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        top: 100px;
+        height: 0vh;
+        background: rgba(0, 0, 0, .95);
+        text-align: center;
+        transition: all .5s;
+        margin: 0;
+    }
+    .nav-menu li{
+        display: none;
+        line-height: 30px;
+        transition: all .5s;
+    }
+    .nav-menu li a{
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    #check{
+        display: none;
+    }
+    #check:checked ~ .nav-menu{
+        height: 100%;
+        position: fixed;
+    }
+    #check:checked ~ .nav-menu li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+}
+.courses{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.curso{
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px;
+}
+.curso p{
+    max-width: 400px;
+    padding: 10px;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+.curso a{
+    color: #fff;
+    background: #010101;
+    padding: 10px;
+    border-radius: 30px;
+    width: 90px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.curso a:hover{
+    background: #00A97F;
+    transition: .3s;
+}
+.curso img{
+    width: 100%;
+    max-width: 300px;
+}
