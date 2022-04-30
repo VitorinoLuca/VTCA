@@ -19,7 +19,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
 }
 h1{
     color: #fff;
@@ -176,6 +176,18 @@ ul li:hover::after{
 .courses{
     min-height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.courses h2{
+    font-size: 4rem;
+    padding: 20px;
+    font-family: alfa slab one;
+    font-weight: 100;
+}
+.cursos__container{
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -202,9 +214,10 @@ ul li:hover::after{
     background: #010101;
     padding: 10px;
     border-radius: 30px;
-    width: 90px;
+    width: 100px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 10px;
 }
 .curso a:hover{
     background: #00A97F;
@@ -213,4 +226,34 @@ ul li:hover::after{
 .curso img{
     width: 100%;
     max-width: 300px;
+    padding: 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
+}
+footer a{
+    color: #c1c1c1;
+}
+footer a:hover{
+    color: #00A97F;
+    transition: .3s;
+}
+.h2__background{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../assets/about.jpg);
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    font-size: 2.5rem;
+    text-shadow:#000 10px 10px 10px;
 }
